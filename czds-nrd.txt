@@ -1,4 +1,4 @@
-# CZDS Zone File NRD - Last 24 Hours (2026-03-23)
+# CZDS Zone File NRD (2026-03-23)
 # Discovered from ICANN CZDS zone file diffs
 
 
