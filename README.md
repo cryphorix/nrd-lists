@@ -8,8 +8,9 @@ Powered by **ICANN CZDS zone files** (1,000+ TLDs), **Certificate Transparency l
 
 - **63+ million** unique domains in the database
 - **2+ million** new domains ingested daily on average
-- **825 TLD zone files** parsed daily with full NS, DS, and glue records
-- AXFR zone transfer scanning across all indexed nameservers
+- **831 TLD zone files** parsed daily with full NS, DS, and glue records
+- **130.9 million** domain-NS mappings, **733K** unique nameservers
+- **513 open zone transfers** detected across 27,337 tested nameservers
 - Feeds are updated and pushed to this repo every day at 06:00 UTC
 
 ## Feeds
@@ -29,7 +30,7 @@ Powered by **ICANN CZDS zone files** (1,000+ TLDs), **Certificate Transparency l
 | File | Description | Update Frequency |
 |------|-------------|-----------------|
 | `zone-nameservers.csv` | Top nameservers ranked by domain count | Daily |
-| `zone-dnssec-stats.txt` | DNSSEC adoption statistics per TLD | Daily |
+| `zone-dnssec-stats.csv` | DNSSEC adoption statistics per TLD | Daily |
 | `zone-ns-providers.csv` | Nameserver provider market share | Daily |
 
 ### AXFR Zone Transfer Detection
@@ -38,6 +39,10 @@ Powered by **ICANN CZDS zone files** (1,000+ TLDs), **Certificate Transparency l
 |------|-------------|-----------------|
 | `axfr-open.csv` | Domains with open zone transfers (AXFR) | Daily |
 | `axfr-summary.txt` | AXFR scan statistics and summary | Daily |
+
+### Full Zone Data (Parquet)
+
+Complete zone metadata is available as Parquet files in [GitHub Releases](https://github.com/cryphorix/domain-scanner/releases). These contain the full 130.9M domain-NS mappings, DNSSEC records, and glue records — queryable with DuckDB, Python, or Spark.
 
 Large feeds are automatically split into parts (e.g. `nrd-full-part1.txt`, `nrd-full-part2.txt`) to stay within GitHub's file size limits.
 
