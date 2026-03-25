@@ -10,7 +10,7 @@ Powered by **ICANN CZDS zone files** (831 TLDs), **Certificate Transparency logs
 
 | Metric | Value |
 |--------|-------|
-| Unique domains in database | **63,554,536** |
+| Unique domains in database | **63,695,742** |
 | Domain-NS mappings | **130,903,636** |
 | Unique nameservers | **733,357** |
 | TLD zone files parsed | **831** |
@@ -19,7 +19,7 @@ Powered by **ICANN CZDS zone files** (831 TLDs), **Certificate Transparency logs
 | Glue records | **892,779** |
 | AXFR nameservers tested | **27,337** |
 | Open zone transfers | **513** (1.88%) |
-| CT log domains (24h) | **599,649** |
+| CT log domains (24h) | **739,072** |
 
 ## Feeds
 
@@ -201,7 +201,7 @@ suspicious = df[df['nameserver'] == 'ns1.suspicious-host.com']
 
 | Source | Total domains | Zone metadata | AXFR detection | Parquet export |
 |--------|--------------|---------------|----------------|----------------|
-| **cryphorix/threat-feeds** | **63,554,536+** (growing daily) | **130.9M NS records, 831 TLDs** | **Yes** | **Yes** |
+| **cryphorix/threat-feeds** | **63,695,742+** (growing daily) | **130.9M NS records, 831 TLDs** | **Yes** | **Yes** |
 | cenk/nrd | ~3M | No | No | No |
 | shreshta-labs/newly-registered-domains | Unknown | No | No | No |
 | cbuijs/nrd | Unknown | No | No | No |
